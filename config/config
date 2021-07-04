@@ -1,0 +1,20 @@
+-- ROOT
+root = "./"
+thread = 8
+-- 输出到标准输出
+logger = nil
+logpath = root.."logs"
+harbor = 0
+-- main script
+-- 在service目录下
+start = "simpleweb"
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+luaservice = root.."service/?.lua"
+lualoader = root.."lualib/loader.lua"
+cpath = root.."cservice/?.so"
+-- daemon = "etc/skynet.pid"
+lua_path = root.."lualib/?.lua"
+lua_cpath = root.."luaclib/?.so"
+
+http_port = 8080
+static_path = root.."static/"
